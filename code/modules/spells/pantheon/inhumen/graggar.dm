@@ -4,7 +4,7 @@
 	desc = "Grants you and all allies nearby a buff to their strength, willpower, and constitution."
 	overlay_state = "call_to_slaughter"
 	recharge_time = 5 MINUTES
-	invocations = list("LAMBS TO THE SLAUGHTER!")
+	invocations = list("LAMBS TO THE SLAUGHTER!", "LET'S FIGHT! I'LL KILL ANYTHING THAT MOVES!)
 	invocation_type = "shout"
 	sound = 'sound/magic/timestop.ogg'
 	releasedrain = 30
