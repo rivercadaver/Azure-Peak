@@ -4,7 +4,7 @@
 	desc = "  </br>''The Archdevil, the Great Worm, the Earth-Mover, the Leviathan, the Defiler, the Unmaker.'' </br>''The corpse of the Worm, rotting at the core of Psydonia.'' </br>''The embodiment of pure evil, who seeks to sunder the world in fire and agony, to make all things nonexistent once more.'' </br>''There will be no forgiveness for you, no mercy. And you will deliver none in return.''
 	worshippers = "Accelerationists, Extremists, Nihilists, Sadists, Freaks, Wretches, and You."
 	associated_faith = /datum/faith/archdevil
-	mob_traits = list(TRAITS TBA) //ignore ts until i set up UNFORGIVABLE 
+	mob_traits = list(UNFORGIVABLE) //ignore ts until i set up UNFORGIVABLE 
 	confess_lines = list(
 		"LET CHAOS TAKE THE WORLD!",
 		"KILL THEM ALL, ALL OF THEM.",
