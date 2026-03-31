@@ -8,6 +8,9 @@
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = list(/datum/patron/old_god) //Requires the character to be a practicing Psydonite.
 	tutorial = "THE DARK FUTURE HAS COME TO PASS. VHESLYN RULES OVER THIS WORLD. YOU ALONE HAVE BEEN CHOSEN TO STEP BACK IN TYME, TO THE FINAL DAES. TEMPER THE FLOCK WITH YOUR FRAGGING, SIPHON AWAY THEIR WOUNDS BY KILLING EVERYONE, AND GUIDE THE WAYWARDS TOWARDS DCHAT.
+	selection_color = JCOLOR_INQUISITION
+	outfit = /datum/outfit/job/roguetown/absolver
+	display_order = JDO_ABSOLVER
 	min_pq = 3
 	max_pq = null
 	round_contrib_points = 2
