@@ -20,14 +20,17 @@
 		TRAIT_DODGEEXPERT,
 		TRAIT_INFINITE_ENERGY,
 		TRAIT_EMPATH,
-		TRAIT_IGNOREDAMAGESLOWDOWN
-		TRAIT_IGNORESLOWDOWN
+		TRAIT_IGNOREDAMAGESLOWDOWN,
+		TRAIT_IGNORESLOWDOWN,
 		TRAIT_CRITICAL_RESISTANCE,
 		TRAIT_SILVER_BLESSED,
 		TRAIT_STEELHEARTED,
 		TRAIT_INQUISITION,
 		TRAIT_THERMAL_VISION,
-		TRAIT_GOODLOVER
+		TRAIT_GOODLOVER,
+		TRAIT_HEAVYARMOR,
+		TRAIT_MEDIUMARMOR
+		
 	)
 
 	advclass_cat_rolls = list(CTAG_ABSOLVER = 2)
@@ -98,12 +101,12 @@
 	cloak = /obj/item/clothing/cloak/absolutionistrobe
 	backr = /obj/item/storage/backpack/rogue/satchel/otavan
 	belt = /obj/item/storage/belt/rogue/leather
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fencer/psydon
+	pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
+	armor = /obj/item/clothingsuit/roguetown/armor/plate/full/blacksteel/modern
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq
-	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blacksteel/modern
 	mask = /obj/item/clothing/head/roguetown/helmet/blacksteel/psythorns
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/absolver
+	head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern
 	id = /obj/item/clothing/ring/signet/silver
 	backpack_contents = list(
 		/obj/item/book/rogue/bibble/psy = 1,
