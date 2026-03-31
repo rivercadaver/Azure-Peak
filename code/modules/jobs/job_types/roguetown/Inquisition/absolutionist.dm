@@ -29,8 +29,7 @@
 		TRAIT_THERMAL_VISION,
 		TRAIT_GOODLOVER,
 		TRAIT_HEAVYARMOR,
-		TRAIT_MEDIUMARMOR
-		
+		TRAIT_MEDIUMARMOR,	
 	)
 
 	advclass_cat_rolls = list(CTAG_ABSOLVER = 2)
@@ -61,11 +60,12 @@
 		/datum/skill/labor/fishing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/crafting = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/swords = SKILL_LEVEL_LEGENDARY
-		/datum/skill/combat/maces = SKILL_LEVEL_LEGENDARY
-		/datum/skill/combat/polearms = SKILL_LEVEL_LEGENDARY
-		/datum/skill/combat/wrestling = SKILL_LEVEL_LEGENDARY
-		/datum/skill/combat/unarmed = SKILL_LEVEL_LEGENDARY
+		/datum/skill/combat/swords = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/maces = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/polearms = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/combat/knives = SKILL_LEVEL_LEGENDARY,
 		/datum/skill/magic/holy = SKILL_LEVEL_EXPERT, // Psydon's Holiest Guy
 	)
 	subclass_stashed_items = list(
