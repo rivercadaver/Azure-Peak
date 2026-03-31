@@ -1,5 +1,5 @@
 /datum/job/roguetown/absolver
-	title = "Absolver"
+	title = "Psydonic Dark Future Combat Absolver"
 	flag = ABSOLVER
 	department_flag = INQUISITION
 	faction = "Station"
@@ -7,10 +7,7 @@
 	spawn_positions = 1
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = list(/datum/patron/old_god) //Requires the character to be a practicing Psydonite.
-	tutorial = "Once, you were alone in this monastery; a chapel of stone, protecting a shard of Psydon's divinity. Now, you've a whole sect to shepherd - and their propensity for violence oft-clashes with your own vows of pacifism. Temper the floch with your wisdom, siphon away their wounds with your blessings, and guide the wayard towards absolution."
-	selection_color = JCOLOR_INQUISITION
-	outfit = /datum/outfit/job/roguetown/absolver
-	display_order = JDO_ABSOLVER
+	tutorial = "THE DARK FUTURE HAS COME TO PASS. VHESLYN RULES OVER THIS WORLD. YOU ALONE HAVE BEEN CHOSEN TO STEP BACK IN TYME, TO THE FINAL DAES. TEMPER THE FLOCK WITH YOUR FRAGGING, SIPHON AWAY THEIR WOUNDS BY KILLING EVERYONE, AND GUIDE THE WAYWARDS TOWARDS DCHAT.
 	min_pq = 3
 	max_pq = null
 	round_contrib_points = 2
@@ -20,12 +17,16 @@
 
 	job_traits = list(
 		TRAIT_NOPAINSTUN,
-		TRAIT_PACIFISM,
+		TRAIT_DODGEEXPERT,
+		TRAIT_INFINITE_ENERGY,
 		TRAIT_EMPATH,
+		TRAIT_IGNOREDAMAGESLOWDOWN
+		TRAIT_IGNORESLOWDOWN
 		TRAIT_CRITICAL_RESISTANCE,
 		TRAIT_SILVER_BLESSED,
 		TRAIT_STEELHEARTED,
 		TRAIT_INQUISITION,
+		TRAIT_THERMAL_VISION,
 	)
 
 	advclass_cat_rolls = list(CTAG_ABSOLVER = 2)
@@ -34,14 +35,15 @@
 	)
 
 /datum/advclass/absolver
-	name = "Absolver"
-	tutorial = "Once, you were alone in this monastery; a chapel of stone, protecting a shard of Psydon's divinity. Now, you've a whole sect to shepherd - and their propensity for violence oft-clashes with your own vows of pacifism. Temper the floch with your wisdom, siphon away their wounds with your blessings, and guide the wayard towards absolution."
-	outfit = /datum/outfit/job/roguetown/absolver/basic
+	name = "Psydonic Dark Future Combat Absolver"
+	tutorial = "THE DARK FUTURE HAS COME TO PASS. VHESLYN RULES OVER THIS WORLD. YOU ALONE HAVE BEEN CHOSEN TO STEP BACK IN TYME, TO THE FINAL DAES. TEMPER THE FLOCK WITH YOUR FRAGGING, SIPHON AWAY THEIR WOUNDS BY KILLING EVERYONE, AND GUIDE THE WAYWARDS TOWARDS DCHAT.
 	subclass_languages = list(/datum/language/otavan)
 	category_tags = list(CTAG_ABSOLVER)
 	subclass_stats = list(
+		STATKEY_STR = 5,
 		STATKEY_CON = 7,
 		STATKEY_WIL = 3,
+		STATKEY_PER = 2,
 		STATKEY_SPD = -2 //Originally swapped to -3, but this probably isn't as important due to the pacifism trait.
 	)
 	subclass_skills = list(
@@ -55,10 +57,16 @@
 		/datum/skill/labor/fishing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/crafting = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/swords = SKILL_LEVEL_LEGENDARY
+		/datum/skill/combat/maces = SKILL_LEVEL_LEGENDARY
+		/datum/skill/combat/polearms = SKILL_LEVEL_LEGENDARY
+		/datum/skill/combat/wrestling = SKILL_LEVEL_LEGENDARY
+		/datum/skill/combat/unarmed = SKILL_LEVEL_LEGENDARY
 		/datum/skill/magic/holy = SKILL_LEVEL_EXPERT, // Psydon's Holiest Guy
 	)
 	subclass_stashed_items = list(
 		"Tome of Psydon" = /obj/item/book/rogue/bibble/psy
+		"Rondel Dagger" = /obj/item/rogueweapon/huntingknife/idagger/steel/rondel
 	)
 
 // REMEMBER FLAGELLANT? REMEMBER LASZLO? THIS IS HIM NOW. FEEL OLD YET?
