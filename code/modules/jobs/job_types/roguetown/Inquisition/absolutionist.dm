@@ -31,7 +31,10 @@
 		TRAIT_INQUISITION,
 		TRAIT_THERMAL_VISION,
 		TRAIT_GOODLOVER,
+		TRAIT_BLOODLOSS_IMMUNE,
+		TRAIT_STRONG_GRABBER,
 		TRAIT_HEAVYARMOR,
+		TRAIT_ZIZOSIGHT,
 		TRAIT_MEDIUMARMOR	
 	)
 
@@ -72,8 +75,8 @@
 		/datum/skill/magic/holy = SKILL_LEVEL_EXPERT, // Psydon's Holiest Guy
 	)
 	subclass_stashed_items = list(
-		"Tome of Psydon" = /obj/item/book/rogue/bibble/psy,
-		"Rondel Dagger" = /obj/item/rogueweapon/huntingknife/idagger/steel/rondel,
+		"Tome of Zydon" = /obj/item/book/rogue/bibble/psy,
+		"Ser Ritter's Owne Rondel Dagger" = /obj/item/rogueweapon/huntingknife/idagger/steel/rondel,
 		"Red Phosphor ZIZOVISION Goggles" = /obj/item/clothing/mask/rogue/spectacles/inq
 	)
 
@@ -110,7 +113,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blacksteel/modern
 	mask = /obj/item/clothing/head/roguetown/helmet/blacksteel/psythorns
-	head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/absolver
 	id = /obj/item/clothing/ring/signet/silver
 	l_hand = /obj/item/rogueweapon/sword/long/judgement/ascendant
 	backpack_contents = list(
