@@ -7,10 +7,9 @@
 	spawn_positions = 1
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = list(/datum/patron/old_god) //Requires the character to be a practicing Psydonite.
-	tutorial = "THE DARK FUTURE HAS COME TO PASS. VHESLYN RULES OVER THIS WORLD. YOU ALONE HAVE BEEN CHOSEN TO STEP BACK IN TYME, TO THE FINAL DAES. TEMPER THE FLOCK WITH YOUR FRAGGING, SIPHON AWAY THEIR WOUNDS BY KILLING EVERYONE, AND GUIDE THE WAYWARDS TOWARDS DCHAT.
-	selection_color = JCOLOR_INQUISITION"
-	
-	outfit = /datum/outfit/job/roguetown/absolver/basic
+	tutorial = "THE DARK FUTURE HAS COME TO PASS. VHESLYN RULES OVER THIS WORLD. YOU ALONE HAVE BEEN CHOSEN TO STEP BACK IN TYME, TO THE FINAL DAES. TEMPER THE FLOCK WITH YOUR FRAGGING, SIPHON AWAY THEIR WOUNDS BY KILLING EVERYONE, AND GUIDE THE WAYWARDS TOWARDS DCHAT."
+	selection_color = JCOLOR_INQUISITION
+	outfit = /datum/outfit/job/roguetown/absolver
 	display_order = JDO_ABSOLVER
 	min_pq = 3
 	max_pq = null
@@ -44,9 +43,7 @@
 /datum/advclass/absolver
 	name = "Absolver"
 	tutorial = "THE DARK FUTURE HAS COME TO PASS. VHESLYN RULES OVER THIS WORLD. YOU ALONE HAVE BEEN CHOSEN TO STEP BACK IN TYME, TO THE FINAL DAES. TEMPER THE FLOCK WITH YOUR FRAGGING, SIPHON AWAY THEIR WOUNDS BY KILLING EVERYONE, AND GUIDE THE WAYWARDS TOWARDS DCHAT. YOUR OBJECTIVES ARE: 1. KILL THE GRAND DUKE OF AZURIA. 2. SECURE STRATEGIC OIL RESERVES FOR FUTURE OTAVA. 3. ESCAPE TO RANESHEN ALIVE AND UNRESTRAINED."
-	selection_color = JCOLOR_INQUISITION
 	outfit = /datum/outfit/job/roguetown/absolver/basic
-	display_order = JDO_ABSOLVER
 	subclass_languages = list(/datum/language/otavan)
 	category_tags = list(CTAG_ABSOLVER)
 	subclass_stats = list(
@@ -61,7 +58,6 @@
 		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/sewing = SKILL_LEVEL_JOURNEYMAN, // A hobbyist.
 		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_NOVICE, // Parry things.
 		/datum/skill/misc/medicine = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/cooking = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/labor/fishing = SKILL_LEVEL_JOURNEYMAN,
@@ -76,8 +72,8 @@
 		/datum/skill/magic/holy = SKILL_LEVEL_EXPERT, // Psydon's Holiest Guy
 	)
 	subclass_stashed_items = list(
-		"Tome of Psydon" = /obj/item/book/rogue/bibble/psy
-		"Rondel Dagger" = /obj/item/rogueweapon/huntingknife/idagger/steel/rondel
+		"Tome of Psydon" = /obj/item/book/rogue/bibble/psy,
+		"Rondel Dagger" = /obj/item/rogueweapon/huntingknife/idagger/steel/rondel,
 		"Red Phosphor ZIZOVISION Goggles" = /obj/item/clothing/mask/rogue/spectacles/inq
 	)
 
@@ -110,12 +106,13 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/otavan
 	belt = /obj/item/storage/belt/rogue/leather
 	pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
-	armor = /obj/item/clothingsuit/roguetown/armor/plate/full/blacksteel/modern
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/blacksteel/modern
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blacksteel/modern
 	mask = /obj/item/clothing/head/roguetown/helmet/blacksteel/psythorns
 	head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern
 	id = /obj/item/clothing/ring/signet/silver
+	l_hand = /obj/item/rogueweapon/sword/long/judgement/ascendant
 	backpack_contents = list(
 		/obj/item/book/rogue/bibble/psy = 1,
 		/obj/item/natural/bundle/cloth/bandage/full = 2,
@@ -181,3 +178,4 @@
 	to_chat(target, span_danger("You feel the weight of heresy lift from your soul as you embrace [user.patron.name]!"))
 
 	return TRUE
+
