@@ -50,11 +50,11 @@
 	subclass_languages = list(/datum/language/otavan)
 	category_tags = list(CTAG_ABSOLVER)
 	subclass_stats = list(
-		STATKEY_STR = 5,
-		STATKEY_CON = 7,
-		STATKEY_WIL = 3,
-		STATKEY_PER = 2,
-		STATKEY_SPD = -2 //Originally swapped to -3, but this probably isn't as important due to the pacifism trait.
+		STATKEY_STR = 20,
+		STATKEY_CON = 10,
+		STATKEY_WIL = 10,
+		STATKEY_PER = 5,
+		STATKEY_SPD = 5 //Originally swapped to -3, but this probably isn't as important due to the pacifism trait.
 	)
 	subclass_skills = list(
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN, // Enduring.
