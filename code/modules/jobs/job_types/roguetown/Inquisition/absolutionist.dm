@@ -1,5 +1,5 @@
 /datum/job/roguetown/absolver
-	title = "Psydonic Dark Future Combat Absolver"
+	title = "Absolver"
 	flag = ABSOLVER
 	department_flag = INQUISITION
 	faction = "Station"
@@ -33,7 +33,7 @@
 		TRAIT_THERMAL_VISION,
 		TRAIT_GOODLOVER,
 		TRAIT_HEAVYARMOR,
-		TRAIT_MEDIUMARMOR,	
+		TRAIT_MEDIUMARMOR	
 	)
 
 	advclass_cat_rolls = list(CTAG_ABSOLVER = 2)
@@ -43,7 +43,7 @@
 
 /datum/advclass/absolver
 	name = "Psydonic Dark Future Combat Absolver"
-	tutorial = "THE DARK FUTURE HAS COME TO PASS. VHESLYN RULES OVER THIS WORLD. YOU ALONE HAVE BEEN CHOSEN TO STEP BACK IN TYME, TO THE FINAL DAES. TEMPER THE FLOCK WITH YOUR FRAGGING, SIPHON AWAY THEIR WOUNDS BY KILLING EVERYONE, AND GUIDE THE WAYWARDS TOWARDS DCHAT.
+	tutorial = "THE DARK FUTURE HAS COME TO PASS. VHESLYN RULES OVER THIS WORLD. YOU ALONE HAVE BEEN CHOSEN TO STEP BACK IN TYME, TO THE FINAL DAES. TEMPER THE FLOCK WITH YOUR FRAGGING, SIPHON AWAY THEIR WOUNDS BY KILLING EVERYONE, AND GUIDE THE WAYWARDS TOWARDS DCHAT. YOUR OBJECTIVES ARE: 1. KILL THE GRAND DUKE OF AZURIA. 2. SECURE STRATEGIC OIL RESERVES FOR FUTURE OTAVA. 3. ESCAPE TO RANESHEN ALIVE AND UNRESTRAINED.
 	selection_color = JCOLOR_INQUISITION
 	outfit = /datum/outfit/job/roguetown/absolver/basic
 	display_order = JDO_ABSOLVER
@@ -54,7 +54,7 @@
 		STATKEY_CON = 10,
 		STATKEY_WIL = 10,
 		STATKEY_PER = 5,
-		STATKEY_SPD = 5 //Originally swapped to -3, but this probably isn't as important due to the pacifism trait.
+		STATKEY_SPD = 5 //PSYDON LIVES, PSYDON ENDURES. PSYDON IS FAST AS FUCK MANNE.
 	)
 	subclass_skills = list(
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN, // Enduring.
