@@ -50,11 +50,11 @@
 		TRAIT_PURITAN,
 		)
 	subclass_stats = list(
-		STATKEY_CON = 1,
+		STATKEY_CON = 2,
 		STATKEY_PER = 3,
 		STATKEY_INT = 3,
 		STATKEY_STR = 1,
-		STATKEY_WIL = 1,
+		STATKEY_WIL = 2,
 		STATKEY_SPD = 1,
 	)
 	subclass_skills = list(
@@ -158,7 +158,7 @@
 		STATKEY_INT = 1,
 		STATKEY_STR = 3,
 		STATKEY_PER = 1,
-		STATKEY_SPD = -3
+		STATKEY_SPD = -1
 	)
 	subclass_skills = list(
 		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
