@@ -12,7 +12,6 @@
 		STATKEY_WIL = 3,
 		STATKEY_CON = 3,
 		STATKEY_STR = 2,
-		STATKEY_SPD = -1
 	)
 	subclass_skills = list(
 		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
@@ -82,7 +81,7 @@
 			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/ornate, SLOT_ARMOR, TRUE)
 		if("Cuirass")
 			H.equip_to_slot_or_del(new /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fluted/ornate, SLOT_ARMOR, TRUE)
-			H.change_stat(STATKEY_SPD, 1) //Less durability and coverage, but still upgradable. Balances out the innate -1 SPD debuff.
+			H.change_stat(STATKEY_SPD, 1) //Less durability and coverage, but still upgradable. Makes you faster.
 
 	var/weapons = list("Psydonic Longsword", "Psydonic War Axe", "Psydonic Whip", "Psydonic Flail", "Psydonic Grand Mace", "Psydonic Spear + Flanged Mace", "Psydonic Poleaxe + Shortsword", "Psydonic Flanged Mace")
 	var/weapon_choice = input(H,"Choose your WEAPON.", "TAKE UP PSYDON'S ARMS.") as anything in weapons
