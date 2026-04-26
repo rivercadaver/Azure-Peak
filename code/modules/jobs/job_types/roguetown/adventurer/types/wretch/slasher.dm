@@ -7,13 +7,14 @@
 	cmode_music = 'sound/music/combat_ozium.ogg'
 	class_select_category = CLASS_CAT_ACCURSED
 	category_tags = list(CTAG_WRETCH)
-	traits_applied = list(TRAIT_PSYCHOSIS, TRAIT_DECEIVING_MEEKNESS, TRAIT_ORGAN_EATER, TRAIT_NASTY_EATER) //they'll choose their defense skill later
+	traits_applied = list(TRAIT_PSYCHOSIS, TRAIT_DECEIVING_MEEKNESS, TRAIT_ORGAN_EATER, TRAIT_NASTY_EATER, TRAIT_NOPAINSTUN, TRAIT_BLOOD_RESISTANCE, TRAIT_DODGEEXPERT, TRAIT_LIGHT_STEP) //bundles both classes into one. 
 	maximum_possible_slots = 2 
 	extra_context = "This subclass, like all wretch subclasses, is still subject to the elevated rules and expectations that wretches must follow. You are held to a higher roleplay standard than everyone else, and your psychosis is not an OOC excuse for your gameplay to exclusively be killing others. Your character might be an insidious killer - but you are merely an actor, sharing the stage with everyone else."
 	subclass_stats = list(
-		STATKEY_STR = 2,
-		STATKEY_SPD = 1,
-    	STATKEY_WIL = 1, //6 stat weight, gains +1 to str or spd later
+		STATKEY_STR = 3,
+		STATKEY_CON = 2		// adds con, because there is ALWAYS a freifechter
+		STATKEY_SPD = 2, //cuts the specializations, folds them into one w/ +spd and + str
+    	STATKEY_WIL = 1, 
 		STATKEY_INT = -1
 	)
 	subclass_skills = list(
@@ -25,7 +26,7 @@
   		/datum/skill/misc/tracking = SKILL_LEVEL_EXPERT, //but you can't hide.
 		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/sneaking = SKILL_LEVEL_JOURNEYMAN, //LOOK BEHIND YOU!!
+		/datum/skill/misc/sneaking = SKILL_LEVEL_MASTER, //LOOK BEHIND YOU!!
 		/datum/skill/craft/crafting = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/medicine = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/sewing = SKILL_LEVEL_APPRENTICE,
@@ -60,8 +61,6 @@
 	if(H.mind)
 		var/weapons = list("Executioner's Sword", "Cudgel", "Axe")
 		var/weapon_choice = input(H, "Do you like hurting other people?", "TAKE UP ARMS") as anything in weapons
-		var/specialization = list("Fast (Dodge Expert, Sneaking, +1 SPD)", "Strong (No Pain Stun, Blood Resistance, +1 STR)") //thank you outlaw coders i love you mwah
-		var/specialization_choice = input(H, "How?", "TAKE UP ARMS") as anything in specialization
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Executioner's Sword") // silent hill?
@@ -73,14 +72,4 @@
 			if ("Axe") // classic. i killed paul allen with one of these
 				H.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_EXPERT, TRUE)
 				l_hand = /obj/item/rogueweapon/stoneaxe/woodcut/steel
-		switch(specialization_choice)
-			if("Fast (Dodge Expert, Sneaking, +1 SPD)")
-				H.adjust_skillrank_up_to(/datum/skill/misc/sneaking, SKILL_LEVEL_MASTER, TRUE)
-				ADD_TRAIT(H, TRAIT_LIGHT_STEP, TRAIT_GENERIC)
-				ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-				H.change_stat(STATKEY_SPD, 1)
-			if("Strong (No Pain Stun, Blood Resistance, +1 STR)")
-				ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
-				ADD_TRAIT(H, TRAIT_BLOOD_RESISTANCE, TRAIT_GENERIC)
-				H.change_stat(STATKEY_STR, 1)
 		wretch_select_bounty(H)
