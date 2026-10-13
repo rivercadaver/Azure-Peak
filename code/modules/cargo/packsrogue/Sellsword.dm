@@ -133,6 +133,12 @@
 	cost = 120
 	contains = list(/obj/item/rogueweapon/spear/lance)
 
+/datum/supply_pack/rogue/Sellsword/atgerviaxe
+	name = "Gronnic Axe"
+	cost = 80
+	contains = list(/obj/item/rogueweapon/shield/atgervi)
+
+
 /////////////
 // SHIELDS //
 /////////////
@@ -147,6 +153,12 @@
 	cost = 10
 	contains = list(/obj/item/rogueweapon/shield/heater)
 
+
+/datum/supply_pack/rogue/Sellsword/atgervishield
+	name = "Gronnic Shield"
+	cost = 50
+	contains = list(/obj/item/rogueweapon/shield/atgervi)
+
 //////////////////////
 // WEAPONS - RANGED //
 //////////////////////
@@ -156,6 +168,11 @@
 	cost = 40
 	contains = list(/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow)
 
+/datum/supply_pack/rogue/Sellsword/slurbow
+	name = "Slurbow"
+	cost = 40
+	contains = list(/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow)
+
 /////////////////////////////
 // WEAPONS - RANGED - AMMO //
 /////////////////////////////
@@ -164,6 +181,11 @@
 	name = "Quiver of Bolts"
 	cost = 30
 	contains = list(/obj/item/quiver/bolts)
+
+/datum/supply_pack/rogue/Sellsword/quivers/bolts/light
+	name = "Quiver of Bolts - Light"
+	cost = 30
+	contains = list(/obj/item/quiver/bolt/light)
 
 //////////////////////
 // EQUIPMENT CRATES //
@@ -183,6 +205,20 @@
 	new /obj/item/clothing/under/roguetown/heavy_leather_pants/grenzelpants(src)
 	new /obj/item/clothing/shoes/roguetown/grenzelhoft(src)
 	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/grenzelhoft(src)
+	new /obj/item/clothing/neck/roguetown/chaincoif/chainmantle
+
+/datum/supply_pack/rogue/Sellsword/Varangiancrate
+	name = "Atgervi Varangian Crate"
+	cost = 260
+	contains = list(obj/structure/closet/crate/chest/bandit/atgervi)
+
+/obj/structure/closet/crate/chest/bandit/grenzel/Initialize()
+	new /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi(src)
+	new /obj/item/clothing/gloves/roguetown/angle/atgervi(src)
+	new /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi(src)
+	new /obj/item/clothing/suit/roguetown/armor/brigandine/gronn(src)
+	new /obj/item/clothing/under/roguetown/trou/leather/atgervi(src)
+	new /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/atgervi
 
 /datum/supply_pack/rogue/Sellsword/Otavancrate
 	name = "Otavan Equipment Crate"
@@ -192,7 +228,7 @@
 /obj/structure/closet/crate/chest/bandit/otavan/Initialize()
 	. = ..()
 	new /obj/item/clothing/head/roguetown/helmet/otavan(src)
-	new /obj/item/clothing/suit/roguetown/armor/plate/otavan(src)
+	new /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fluted/ornate(src) //psydonic fluted cuirass instead of h_armor halfplate
 	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan(src)
 	new /obj/item/clothing/gloves/roguetown/otavan(src)
 	new /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan(src)
@@ -230,14 +266,14 @@
 
 /datum/supply_pack/rogue/Sellsword/Longswordcrate
 	name = "Longswordsman Equipment Crate"
-	cost = 350
+	cost = 260 // why the fuck was this 90 more favor for shit u can just snag in tha main terminal
 	contains = list(/obj/structure/closet/crate/chest/bandit/longsword)
 
 /obj/structure/closet/crate/chest/bandit/longsword/Initialize()
 	. = ..()
 	new /obj/item/clothing/head/roguetown/helmet/sallet/visored(src)
 	new /obj/item/clothing/neck/roguetown/bevor(src)
-	new /obj/item/clothing/suit/roguetown/armor/plate(src)
+	new /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fluted(src) // halfplate no longer med armor, replaced w/ fluplate
 	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy(src)
 	new /obj/item/clothing/wrists/roguetown/bracers(src)
 	new /obj/item/clothing/gloves/roguetown/plate(src)
